@@ -2,7 +2,7 @@
 
 Automatically download subtitles of a tv show from the Addic7ed website.
 
-## Dockerfile
+## Docker
 
 ***Use arm32v7/node:alpine image for raspberry pi***
 
