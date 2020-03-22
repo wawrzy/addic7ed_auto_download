@@ -33,17 +33,20 @@ function readDirectory(source, options = {}) {
 function getAllEpisodes() {
 	const episodes = [];
 
+	// Get TV Shows
 	readDirectory(TV_SOURCE_DIRECTORY, { onlyDirectory: true }).forEach(showName => {
 		const showPath = `${TV_SOURCE_DIRECTORY}/${showName}`;
 
 		if (BLACK_LIST.includes(showName)) return;
 
+		// Get Seasons
 		readDirectory(showPath, { onlyDirectory: true }).forEach(seasonName => {
 			const seasonPath = `${showPath}/${seasonName}`;
 			const seasonNumber = seasonName.match(LAST_NUMBER_RGXP);
 
 			if (!seasonNumber) return;
 
+			// Get Episodes
 			const seasonFiles = readDirectory(seasonPath);
 
 			seasonFiles.forEach(episodeFullName => {
