@@ -18,7 +18,7 @@ Root/
 
 ***Use arm32v7/node:alpine image for raspberry pi***
 
-Process restart every day at 10:42 am
+Process restart every day at 9:42 am
 
 ```sh
 docker run \
