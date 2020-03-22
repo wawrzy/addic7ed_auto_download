@@ -2,6 +2,8 @@
 
 Automatically download subtitles of a tv show from the Addic7ed website.
 
+Process restart every day at 10:42 am
+
 ## Docker
 
 ***Use arm32v7/node:alpine image for raspberry pi***
