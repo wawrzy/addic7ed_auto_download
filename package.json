@@ -6,7 +6,7 @@
   "dependencies": {
     "addic7ed-api": "1.9.0",
     "fs": "^0.0.1-security",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "path": "^0.12.7"
   }
 }
